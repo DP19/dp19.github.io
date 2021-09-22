@@ -1,0 +1,39 @@
+title: David Pait
+email: david@davidpait.io
+description: >-
+  Current Site Reliability Engineer
+  Former Bassist of Sparks The Rescue
+baseurl: ""
+url: "https://davidpait.io" 
+social_link: twitter
+social_username: SparksTheDave
+github_username:  DP19
+
+# Build settings
+theme: jekyll-swiss
+theme_color: blue
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+#github pages required settings
+lsi: false
+safe: true
+soure: ./
+incremental: false
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
