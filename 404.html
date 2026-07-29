@@ -23,3 +23,14 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof pendo !== "undefined") {
+    pendo.track("Page Not Found", {
+      requested_path: window.location.pathname,
+      referrer: document.referrer || "direct"
+    });
+  }
+});
+</script>
