@@ -23,3 +23,16 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+<!-- Pendo Track Event: 404 page encounter -->
+<script>
+  (function () {
+    if (typeof pendo === 'undefined' || typeof pendo.track !== 'function') return;
+
+    pendo.track('404 Page Viewed', {
+      page_url: window.location.href,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct'
+    });
+  })();
+</script>
